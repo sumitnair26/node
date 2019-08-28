@@ -11,6 +11,7 @@ app.use((rq, res, next) => {
 
 app.use((rq, res, next) => {
     console.log("In another the missleware");
+    res.send('<h1>Hello from Express!!!</h1>');
 });
 
 const server = http.createServer(app);
