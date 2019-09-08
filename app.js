@@ -18,7 +18,7 @@ app.use('/admin',adminData.routes);
 app.use(shopRoutes);
 
 app.use((req, res, next) => {
-    res.render('404',{pageTitle: '404 Page'});
+    res.render('404',{pageTitle: '404 Page', path:''});
 });
 
 app.listen(5550);
