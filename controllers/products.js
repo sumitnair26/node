@@ -21,12 +21,15 @@ exports.getProducts = (req, res, next) => {
     //console.log('shop js', adminData.products);
     //res.sendFile(path.join(rootDir,'views', 'shop.html'));
     //const products = adminData.products;
-    const products = Product.fetchAll();
-
-    res.render('shop', {
-        prods: products,
-        docTitle: 'Shop',
-        path:'/',
-        pageTitle:'Shop'
-    }); //pug view
-}
+    Product.fetchAll(products => {
+        res.render('shop', {
+            prods: products,
+            docTitle: 'Shop',
+            path:'/',
+            hasProducts: products.length > 0,
+            activeShop:true,
+            productCSS:true,
+            pageTitle:'Shop'
+        }); //pug view
+    });
+};
