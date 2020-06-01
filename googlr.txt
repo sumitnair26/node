@@ -1,0 +1,41 @@
+google.com, pub-8675534915626666, DIRECT, f08c47fec0942fa0
+vdo.ai, 1628, DIRECT
+appnexus.com, 8148, RESELLER
+advertising.com, 25264, DIRECT, e1a5b5b6e3255540
+beachfront.com, 12484, RESELLER, e2541279e8e2ca4d
+indexexchange.com, 189205, DIRECT, 50b1c356f2c5c8fc
+pubmatic.com, 158017, DIRECT, 5d62403b186f2ace
+districtm.io, 100428, DIRECT, 3fd707be9c4527c3
+appnexus.com, 1908, RESELLER, f5ab79cb980f11d1
+appnexus.com, 7944, RESELLER
+synacor.com, 82275, RESELLER, e108f11b2cdf7d5b
+# AOL - One
+advertising.com, 19623, RESELLER
+# AOL - One
+rubiconproject.com, 18222, RESELLER, 0bfd66d529a55807
+# Rubicon
+rubiconproject.com, 13344, RESELLER, 0bfd66d529a55807
+# Taboola
+freewheel.tv, 799841, RESELLER
+# Taboola
+freewheel.tv, 799921, RESELLER
+onetag.com, 572a470226457b8, RESELLER
+themediagrid.com, P5JONV, RESELLER, 35d5010d7789b49d
+aol.com, 53392, RESELLER
+spotxchange.com, 280397, RESELLER, 7842df1d2fe2db34
+spotx.tv, 280397, RESELLER, 7842df1d2fe2db34
+indexexchange.com, 191514, DIRECT
+pubmatic.com, 159175, RESELLER, 5d62403b186f2ace
+aniview.com, 5db075ae28a0610a7120a21b, RESELLER, 78b21b97965ec3f8
+advertising.com, 23089, RESELLER
+improvedigital.com, 1581, RESELLER
+openx.com, 540862677, RESELLER, 6a698e2ec38604c6
+synacor.com, 82171, RESELLER, e108f11b2cdf7d5b
+rhythmone.com, 1222734754, DIRECT, a670c89d4a324e47
+rhythmone.com, 3736940343, DIRECT, a670c89d4a324e47
+freewheel.tv, 1111553, DIRECT
+freewheel.tv, 1119425, DIRECT
+freewheel.tv, 1118129, RESELLER
+freewheel.tv, 1119441, RESELLER
+video.unrulymedia.com, 1222734754, DIRECT
+video.unrulymedia.com, 3736940343, DIRECT

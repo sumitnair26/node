@@ -5,14 +5,24 @@ exports.getProducts = (req, res, next) => {
     //console.log('shop js', adminData.products);
     //res.sendFile(path.join(rootDir,'views', 'shop.html'));
     //const products = adminData.products;
-    Product.fetchAll(products => {
+    // Product.fetchAll(products => {
+    //     res.render('shop/product-list', {
+    //         prods: products,
+    //         docTitle: 'All products',
+    //         path:'/products',
+    //         pageTitle:'All products'
+    //     }); //pug view
+    // });
+    Product.fetchAll()
+    .then(([rows, fieldData])=>{
         res.render('shop/product-list', {
-            prods: products,
+            prods: rows,
             docTitle: 'All products',
             path:'/products',
             pageTitle:'All products'
         }); //pug view
-    });
+    })
+    .catch(err => console.log(err));
 };
 
 exports.getProduct = (req, res, next) => {
