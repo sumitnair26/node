@@ -2,26 +2,17 @@ const Product = require('../models/product');
 const Cart = require('../models/cart');
 
 exports.getProducts = (req, res, next) => {
-    //console.log('shop js', adminData.products);
-    //res.sendFile(path.join(rootDir,'views', 'shop.html'));
-    //const products = adminData.products;
-    // Product.fetchAll(products => {
-    //     res.render('shop/product-list', {
-    //         prods: products,
-    //         docTitle: 'All products',
-    //         path:'/products',
-    //         pageTitle:'All products'
-    //     }); //pug view
-    // });
-    Product.fetchAll()
-    .then(([rows, fieldData])=>{
-        res.render('shop/product-list', {
-            prods: rows,
-            docTitle: 'All products',
-            path:'/products',
-            pageTitle:'All products'
-        }); //pug view
-    })
+    Product.findAll()
+    .then(
+        products => {
+            res.render('shop/product-list', {
+                prods: products,
+                docTitle: 'All products',
+                path:'/products',
+                pageTitle:'All products'
+            }); //pug view
+        }
+    )
     .catch(err => console.log(err));
 };
 
@@ -39,15 +30,17 @@ exports.getProduct = (req, res, next) => {
 };
 
 exports.getIndex = (req, res, next) => {
-    Product.fetchAll()
-    .then(([rows, fieldData])=>{
-        res.render('shop/index', {
-            prods: rows,
-            docTitle: 'Shop',
-            path:'/',
-            pageTitle:'Shop'
-        }); //pug view
-    })
+    Product.findAll()
+    .then(
+        products => {
+            res.render('shop/index', {
+                prods: products,
+                docTitle: 'Shop',
+                path:'/',
+                pageTitle:'Shop'
+            }); //pug view
+        }
+    )
     .catch(err => console.log(err));
 };
 
