@@ -27,8 +27,8 @@ sequelize
 .sync()
 .then(result => {
     //console.log(result);
-    app.listen(8081);
+    app.listen(8082);
 })
-.catch(err => { 
+.catch(err => {
     console.log(err);
 });
