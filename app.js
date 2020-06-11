@@ -59,10 +59,11 @@ sequelize
 })
 .then(user => {
     //console.log(user);
-    app.listen(8082);
-}
-
-)
+   return user.createCart();
+}).then( cart =>
+    {
+        app.listen(8082);
+    })
 .catch(err => {
     console.log(err);
 });
