@@ -39,8 +39,8 @@ Product.belongsTo(User, {constraints: true, onDelete: 'CASCADE'});
 User.hasMany(Product);
 User.hasOne(Cart);
 Cart.belongsTo(User);
-Cart.belongsToMany(Product, { through: CartItem});
-Product.belongsToMany(Cart, { through: CartItem});
+Cart.belongsToMany(Product, { through: CartItem });
+Product.belongsToMany(Cart, { through: CartItem });
 
 // Product.belongsToMany(Cart);
 
@@ -62,7 +62,7 @@ sequelize
    return user.createCart();
 }).then( cart =>
     {
-        app.listen(8082);
+        app.listen(8081);
     })
 .catch(err => {
     console.log(err);
