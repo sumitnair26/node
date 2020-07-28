@@ -12,6 +12,7 @@ class Product {
 
     save() {
         const db = getDb();
+        let dbOp;
         if(this._id) {
             dbOp = db
             .collection('products')
